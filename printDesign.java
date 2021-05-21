@@ -1,8 +1,9 @@
 package GitHub;
-//import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.*;
 
 public class printDesign {
 	public String starPattern = "*";
+	public String centerizer;
 
 
 	public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class printDesign {
 		if(i<4) {
 			starPattern = starPattern.substring(0, starPattern.length()-1);
 			System.out.println(starPattern);
-			;
+			
 		
 		}
 	
@@ -40,15 +41,19 @@ public class printDesign {
 	}
 	public void patternThree() {
 		for(int i = 0;i<=5;i++){
+			
 			if(i<4) {
-				//starPattern = StringUtils.center(starPattern, 12);
-				System.out.println(starPattern);
+				centerizer = StringUtils.center(starPattern, 12);
+				System.out.println(centerizer);
 				starPattern = starPattern+"**";
+				
+
 				
 			
 			}
 		if(i==5) {
-		System.out.println("...........");
+		
+		System.out.println("............");
 		}
 		}
 			
@@ -62,7 +67,8 @@ public class printDesign {
 				}
 		if(i<4) {
 			starPattern = starPattern.substring(0, starPattern.length()-2);
-			System.out.println(starPattern);
+			centerizer = StringUtils.center(starPattern, 12);
+			System.out.println(centerizer);
 			;
 		
 		}
