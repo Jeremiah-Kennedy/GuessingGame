@@ -12,7 +12,7 @@ public class GuessingGame {
 		System.out.println("We're thinking of a number from 1 to 100. You have five tries to guess within 10 digits: ");
 		
 		//comment this out to play without debugging
-		System.out.printf("%d\n", ourNumber);
+		//System.out.println(ourNumber\n);
 		
 		
 		
@@ -24,10 +24,13 @@ public class GuessingGame {
 			}
 			else{
 				count+=1;
-				System.out.printf("You didn't get it right. The number was %d and your guess was %d\nTry Again: ", ourNumber, guess);
+				//Now used for debugging since my compiler is popping a printf error every time I try to use printf
+				//System.out.printf("You didn't get it right. The number was %i and your guess was %i\nTry Again: ", ourNumber, guess);
 			}
 			if(count==5) {
-				System.out.println("-No More Tries- |Please Play Again|");
+				System.out.println("-No More Tries-");
+				System.out.println("Our number was");
+				System.out.println(ourNumber);
 				System.exit(0);
 			}
 		}
