@@ -1,3 +1,8 @@
+// This file requires the Apache Commons Lang for the centering effect. Which can be downloaded here.
+//http://commons.apache.org/proper/commons-lang/download_lang.cgi
+// Otherwise functions perfectly
+
+
 package GitHub;
 import org.apache.commons.lang3.*;
 
